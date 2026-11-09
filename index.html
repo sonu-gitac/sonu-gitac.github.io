@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Satnam Singh | Digital Marketer & Web Developer</title>
+<meta name="description" content="Satnam Singh - Digital Marketer and Web Developer. Explore my projects, skills and experience.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:#080d0b;color:#f4f7f5;font-family:Arial,sans-serif;line-height:1.6}
+:root{--green:#a3ffbd;--muted:#9ca9a1;--card:#111a15}
+a{text-decoration:none;color:inherit}
+nav{position:sticky;top:0;z-index:10;background:#080d0bea;backdrop-filter:blur(15px);border-bottom:1px solid #253329;padding:18px 8%;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:23px;font-weight:800}.logo span{color:var(--green)}
+.navlinks{display:flex;gap:25px;color:#c3ccc5;font-size:14px}
+.navlinks a:hover{color:var(--green)}
+.menu{display:none;background:none;border:0;color:white;font-size:25px}
+section{padding:90px 10%;scroll-margin-top:70px}
+.hero{min-height:85vh;display:flex;align-items:center}
+.tag{color:var(--green);border:1px solid #426b50;border-radius:30px;padding:8px 15px;font-size:13px;display:inline-block;margin-bottom:25px}
+h1{font-size:clamp(42px,7vw,76px);line-height:1.12;margin-bottom:20px;letter-spacing:-2px}
+h1 span,.green{color:var(--green)}
+.hero p{max-width:650px;color:var(--muted);font-size:17px;margin-bottom:30px}
+.btn{display:inline-block;background:var(--green);color:#08120c;padding:13px 23px;border-radius:7px;font-weight:bold;margin:5px 8px 5px 0;transition:.3s}
+.btn:hover{transform:translateY(-3px)}
+.btn.outline{background:transparent;color:var(--green);border:1px solid var(--green)}
+.section-title{font-size:37px;margin-bottom:12px}
+.subtitle{color:var(--muted);margin-bottom:35px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid #25352a;border-radius:13px;padding:25px;transition:.3s}
+.card:hover{border-color:var(--green);transform:translateY(-5px)}
+.card h3{margin-bottom:12px;color:var(--green)}
+.card p{color:var(--muted);font-size:14px}
+.skill{display:inline-block;background:#1a2b20;border:1px solid #36543e;padding:9px 15px;border-radius:6px;margin:6px;color:#d9f5df;font-size:14px}
+.project-link{display:inline-block;color:var(--green);margin-top:18px;font-size:14px}
+.timeline{border-left:2px solid #426b50;padding-left:25px;margin:20px 0}
+.timeline .card{margin-bottom:20px}
+.contact{text-align:center;background:#101b14}
+.contact p{color:var(--muted);margin:15px auto 25px;max-width:550px}
+footer{text-align:center;padding:25px;color:var(--muted);border-top:1px solid #253329;font-size:13px}
+@media(max-width:700px){
+ nav{padding:15px 6%}
+ .menu{display:block}
+ .navlinks{display:none;position:absolute;top:65px;left:0;width:100%;background:#101a14;padding:20px;flex-direction:column;gap:18px}
+ .navlinks.show{display:flex}
+ section{padding:70px 7%}
+ .hero{min-height:78vh}
+ h1{letter-spacing:-1px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+ <div class="logo">SATNAM<span>.</span></div>
+ <button class="menu" onclick="document.querySelector('.navlinks').classList.toggle('show')">☰</button>
+ <div class="navlinks">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+ </div>
+</nav>
+
+<section class="hero" id="home">
+ <div>
+  <span class="tag">● Available for Opportunities</span>
+  <h1>Hi, I'm Satnam Singh.<br>
+   <span>Digital Marketer</span><br>
+   & Web Developer.
+  </h1>
+  <p>I help businesses grow online through digital marketing, creative strategies, SEO, paid advertising and modern website development.</p>
+  <a class="btn" href="#projects">Explore My Work ↗</a>
+  <a class="btn outline" href="#contact">Let's Connect</a>
+ </div>
+</section>
+
+<section id="about">
+ <h2 class="section-title">About <span class="green">Me</span></h2>
+ <p class="subtitle">A little introduction about myself</p>
+ <div class="card">
+  <p>I'm Satnam Singh, a Digital Marketing enthusiast and Web Developer based in Faridabad, India. I enjoy helping brands build their online presence and turn ideas into digital experiences.</p><br>
+  <p>My experience includes social media management, SEO, Google Ads, Meta Ads, website development and lead generation. I have worked with businesses across different industries and enjoy learning new technologies.</p><br>
+  <p><strong class="green">Location:</strong> Faridabad, India</p>
+  <p><strong class="green">Languages:</strong> English, Hindi, Punjabi</p>
+  <p><strong class="green">Education:</strong> 12th – Currently pursuing</p>
+ </div>
+</section>
+
+<section id="skills">
+ <h2 class="section-title">My <span class="green">Skills</span></h2>
+ <p class="subtitle">Tools and technologies I work with</p>
+ <div>
+  <span class="skill">Search Engine Optimization</span>
+  <span class="skill">Social Media Marketing</span>
+  <span class="skill">Meta Ads</span>
+  <span class="skill">Google Ads</span>
+  <span class="skill">Lead Generation</span>
+  <span class="skill">Content Strategy</span>
+  <span class="skill">WordPress</span>
+  <span class="skill">Wix Development</span>
+  <span class="skill">HTML & CSS</span>
+  <span class="skill">JavaScript</span>
+  <span class="skill">MS Excel</span>
+  <span class="skill">Website SEO</span>
+ </div>
+</section>
+
+<section id="experience">
+ <h2 class="section-title">Work <span class="green">Experience</span></h2>
+ <p class="subtitle">My professional journey</p>
+ <div class="timeline">
+  <div class="card">
+   <h3>Digital Marketing & Coordination</h3>
+   <p><strong>Futuremark Academy</strong></p>
+   <p>Worked on digital marketing, social media, SEO, online promotions and coordination activities.</p>
+  </div>
+  <div class="card">
+   <h3>Digital Marketing</h3>
+   <p><strong>House of Aaranya</strong></p>
+   <p>Worked on social media management, product listings, website content, SEO and online marketing.</p>
+  </div>
+  <div class="card">
+   <h3>Digital Marketing & Web Projects</h3>
+   <p><strong>Aragon Metal Traders</strong></p>
+   <p>Worked on digital marketing activities and business website development.</p>
+  </div>
+  <div class="card">
+   <h3>Calling & Telesales</h3>
+   <p><strong>Beard Gabru & Other Organizations</strong></p>
+   <p>Customer communication, calling, lead follow-ups and sales support.</p>
+  </div>
+ </div>
+</section>
+
+<section id="projects">
+ <h2 class="section-title">Featured <span class="green">Projects</span></h2>
+ <p class="subtitle">Some of the projects I've worked on</p>
+ <div class="grid">
+  <div class="card">
+   <h3>SinghDrafts</h3>
+   <p>My digital services brand focused on web development, website design and digital marketing.</p>
+   <a class="project-link" href="https://singhdrafts.web.app" target="_blank">Visit Website ↗</a>
+  </div>
+  <div class="card">
+   <h3>DS Air Conditioners</h3>
+   <p>Business website development and online presence improvement for an AC service business.</p>
+   <a class="project-link" href="https://dsairconditioner.in" target="_blank">Visit Website ↗</a>
+  </div>
+  <div class="card">
+   <h3>House of Aaranya</h3>
+   <p>Fashion e-commerce website work, product listings and digital marketing.</p>
+   <a class="project-link" href="https://shopaaranya.com" target="_blank">Visit Website ↗</a>
+  </div>
+  <div class="card">
+   <h3>Aragon Metbuild Solutions</h3>
+   <p>Corporate website project for a business specializing in PEB and prefabricated structures.</p>
+   <span class="project-link">Website Development</span>
+  </div>
+ </div>
+</section>
+
+<section class="contact" id="contact">
+ <h2 class="section-title">Let's Work <span class="green">Together</span></h2>
+ <p>Have a project, business idea or opportunity? Feel free to get in touch. Let's create something great together.</p>
+ <a class="btn" href="mailto:ssinghdhillonz224@gmail.com">Email Me ↗</a>
+ <a class="btn outline" href="https://wa.me/919781152942" target="_blank">WhatsApp Me ↗</a>
+ <p>Faridabad, Haryana, India</p>
+</section>
+
+<footer>
+ © 2026 Satnam Singh. All Rights Reserved.
+</footer>
+
+<script>
+document.querySelectorAll('.navlinks a').forEach(link=>{
+ link.addEventListener('click',()=>{
+  document.querySelector('.navlinks').classList.remove('show');
+ });
+});
+</script>
+</body>
+</html>
